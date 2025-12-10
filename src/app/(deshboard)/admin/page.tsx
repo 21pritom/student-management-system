@@ -5,10 +5,10 @@ const AdminPage = () =>{
             {/* left */}
             <div className="w-full lg:w-2/3">
                 {/* USER CARDS */}
-                <div className="">
+                <div className="flex gap-4 justify-between flex-wrap">
                     <UserCard type="student"/>
                     <UserCard type="teacher"/>
-                    <UserCard type="parent"/>
+                    <UserCard type="parent"/> 
                     <UserCard type="staff"/>
                 </div>
             </div>
