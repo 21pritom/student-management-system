@@ -1,6 +1,8 @@
+import Menu from "@/components/Menu"
 const Homepage = () => {
   return (
-    <div className=''>Homepage</div>
+    // <div className=''>Homepage</div>
+    <Menu></Menu>
   )
 }
 
