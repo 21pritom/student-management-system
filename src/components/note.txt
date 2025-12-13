@@ -1,0 +1,5 @@
+npm i react-calender
+npm i react-calendar
+npm install recharts
+npm install 
+npm run dev

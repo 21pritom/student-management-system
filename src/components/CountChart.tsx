@@ -2,15 +2,13 @@
 import { RadialBarChart, RadialBar, Legend, ResponsiveContainer } from "recharts";
 import Image from "next/image";
 
+import { count } from "console";
+
 // #region Sample data
 const data = [
-  { name: "18-24", uv: 31.47, pv: 2400, fill: "#8884d8" },
-  { name: "25-29", uv: 26.69, pv: 4567, fill: "#83a6ed" },
-  { name: "30-34", uv: 15.69, pv: 1398, fill: "#8dd1e1" },
-  { name: "35-39", uv: 8.22, pv: 9800, fill: "#82ca9d" },
-  { name: "40-49", uv: 8.63, pv: 3908, fill: "#a4de6c" },
-  { name: "50+", uv: 2.63, pv: 4800, fill: "#d0ed57" },
-  { name: "unknown", uv: 6.67, pv: 4800, fill: "#ffc658" },
+  { name: "Total", count: 100, fill: "white" },
+  { name: "GIRLS", count: 50, fill: "#FAE27C" },
+  { name: "BOY", count: 50, fill: "#C3EBFA" },
 ];
 // #endregion
 
@@ -31,30 +29,14 @@ const CountChart = () => {
       </div>
 
       {/* CHART */}
-      <div className="w-full h-[75%]">
-        <ResponsiveContainer width="100%" height="100%">
-          <RadialBarChart
-            cx="30%"
-            innerRadius="10%"
-            outerRadius="80%"
-            barSize={14}
-            data={data}
-          >
-            <RadialBar
-              minAngle={15}
-              label={{ position: "insideStart", fill: "#fff" }}
-              background
-              clockWise
-              dataKey="uv"
-            />
-            <Legend
-              iconSize={10}
-              layout="vertical"
-              verticalAlign="middle"
-              wrapperStyle={style}
-            />
+      <div className="r w-full h-[75%]">
+        <ResponsiveContainer> 
+          <RadialBarChart cx="50%" cy="50%" innerRadius="40%"  outerRadius="100%"  barSize={32}  data={data} >
+            <RadialBar background   dataKey="count"/>
+
           </RadialBarChart>
         </ResponsiveContainer>
+        {/* <Image src="/maleFemale.png" alt="" height={50} width={50} className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"/> */}
       </div>
 
       {/* BOTTOM */}

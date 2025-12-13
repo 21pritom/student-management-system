@@ -1,6 +1,7 @@
 import UserCard from "@/components/UserCard";
 import CountChart from "@/components/CountChart";
-
+import AttendanceChart from "@/components/AttendanceChart";
+import FinanceCart from "@/components/FinanceChart";
 const AdminPage = () => {
   return (
     <div className="p-4 flex gap-4 flex-col md:flex-row">
@@ -19,19 +20,20 @@ const AdminPage = () => {
         <div className="flex gap-4 flex-col lg:flex-row">
           
           {/* CountChart */}
-          <div className="w-full lg:w-1/3 h-[450px] bg-white rounded-xl shadow">
+          <div className="w-full lg:w-1/3 h-[450px]">
             <CountChart />
           </div>
 
           {/* Attendance Chart */}
-          <div className="w-full lg:w-2/3 h-[450px] bg-white rounded-xl shadow">
-            {/* এখানে AttendanceChart কম্পোনেন্ট দিলে হবে */}
+          <div className="w-full lg:w-2/3 h-[450px] ">
+            <AttendanceChart/>
           </div>
         </div>
 
         {/* Bottom CHART */}
-        <div className="w-full h-[300px] bg-white rounded-xl shadow">
+        <div className="w-full h-[500px] ">
           {/* এখানে Bottom chart / Table দিবে */}
+          <FinanceCart/>
         </div>
 
       </div>
