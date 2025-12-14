@@ -1,8 +1,8 @@
-//import Menu from "@/components/Menu"
+import Menu from "@/components/Menu"
 const Homepage = () => {
   return 
   // <div className=''>Homepage</div>
-  //<Menu></Menu>
+  <Menu></Menu>
 }
 
 export default Homepage
