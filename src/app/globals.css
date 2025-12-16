@@ -8,11 +8,15 @@
   font-family: "Inter", sans-serif !important;
 }
 
-.react-calendar__tile--now {
-  background: #c3ebfa !important;
+.react-calendar__navigation__label__labelText {
+  font-weight: 600;
+}
+
+.react-calendar__tile--active {
+  background-color: #c3ebfa !important;
   color: black !important;
 }
-/* react-big-calendar subject text fix */
+
 .rbc-btn-group:first-child {
   display: none !important;
 }
@@ -50,15 +54,19 @@
 }
 
 .rbc-time-gutter.rbc-time-column {
+  font-size: 12px !important;
+}
+
+.rbc-time-gutter.rbc-time-column .rbc-timeslot-group {
   padding: 0px 20px !important;
 }
 
-.rbc-timesolt-group {
+.rbc-timeslot-group {
   background-color: #f7fdff !important;
 }
 
-.rbc-day-solt {
-  font-size: 14px;
+.rbc-day-slot {
+  font-size: 14px !important;
 }
 
 .rbc-event {
@@ -98,5 +106,3 @@
   color: gray !important;
   margin-bottom: 5px;
 }
-
-

@@ -1,3 +1,4 @@
+"use client";
 import { Calendar, momentLocalizer, View, Views } from "react-big-calendar";
 import moment from "moment";
 import { calendarEvents } from "@/lib/data";
@@ -20,8 +21,9 @@ const BigCalendar = () => {
       titleAccessor="title" // ensures subject name is shown
       views={["work_week", "day"]}
       view={view}
-      style={{ height: "98%" }}
+      style={{ height: "100%" }}
       onView={handleOnChangeView}
+      defaultDate={new Date(2024, 7, 12)}
       min={new Date(2025, 1, 0, 8, 0, 0)}
       max={new Date(2025, 1, 0, 17, 0, 0)}
     />
