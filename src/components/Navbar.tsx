@@ -24,7 +24,7 @@ const Navbar = () => {
           </div>
         </div>
         <div className="flex flex-col">
-          <span className="text-xs leading-3 font-medium">Pritom das</span>
+          <span className="text-xs leading-3 font-medium">Pritom/Naimul</span>
           <span className="text-[10px] text-gray-500 text-Right">Admin</span>
         </div>
         <Image
